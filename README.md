@@ -1,6 +1,7 @@
 # Player Vs Monster Game, with Components
 
-## A Player Vs Monster Game, made with Vue.Js components.
+A Player Vs Monster Game, made with Vue.Js components.
+[Link to Repo of Original Game (not made with components)](https://github.com/tomSlinger/player-vs-monster-game)
 
 ### How to Run
 
