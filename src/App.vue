@@ -102,13 +102,15 @@
         });
       },
       checkVictoryStatus(){
-        if(this.monsterHeath <= 0){
+        console.log("Checking Victory Status");
+        if(this.monsterHealth <= 0){
           if(confirm("Congrats, you defeated the monster! Start a new game?")){
             this.startNewGame();
           }else{
             this.gameStarted = false;
           }
-        };
+        }
+
         if(this.playerHealth <= 0){
           if(confirm("Oh no! The monster killed you! Start a new game?")){
             this.startNewGame();
