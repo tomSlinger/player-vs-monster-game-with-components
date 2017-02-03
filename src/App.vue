@@ -11,7 +11,7 @@
 
     <!--Controls-->
     <section class="row controls">
-      <controls :gameStatus="gameStarted" :attackFn="attackRound" :specAttackFn="specialAttackRound" :healFn="healRound" :giveUpFn="giveUp"></controls>
+      <controls :gameStatus="gameStarted" :attackFn="attackRound" :specAttackFn="specialAttackRound" :healFn="healRound" :giveUpFn="giveUp" :startGameFn="startNewGame"></controls>
     </section>
 
     <!--Log-->

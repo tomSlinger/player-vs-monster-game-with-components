@@ -1,6 +1,6 @@
 <template>
     <div class="small-12 columns" v-if="!gameStatus">
-        <button id="start-game" @click="startNewGame">START NEW GAME</button>
+        <button id="start-game" @click="startGameFn">START NEW GAME</button>
     </div>
     <div class="small-12 columns" v-else>
         <button id="attack" @click="attackFn">ATTACK</button>
@@ -14,26 +14,12 @@
 
     export default {
         props: {
+            'startGameFn': Function,
             'attackFn': Function,
             'specAttackFn': Function,
             'healFn': Function,
             'giveUpFn': Function,
             'gameStatus': Boolean
-        },
-        data(){
-            return {
-
-            }
-        },
-        methods: {
-            startNewGame(){
-                this.gameStatus = true;
-                eventBus.$emit('gameHasStarted', this.gameStatus);
-                eventBus.$emit('clearLog', []);
-                eventBus.$emit('resetPlayerHealth', 100);
-                eventBus.$emit('resetMonsterHealth', 100);
-                
-            }
         }
     }
 </script>
