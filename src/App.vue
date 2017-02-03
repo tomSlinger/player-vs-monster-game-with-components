@@ -123,20 +123,6 @@
       Monster,
       Controls,
       Log
-    },
-    created(){
-      eventBus.$on('gameHasStarted', (gameStatus) => {
-        this.gameStarted = gameStatus;
-      });
-      eventBus.$on('clearLog', (log) => {
-        this.logs = log;
-      });
-      eventBus.$on('resetPlayerHealth', (health) => {
-        this.playerHealth = health;
-      })
-      eventBus.$on('resetMonsterHealth', (health) => {
-        this.monsterHealth = health;
-      })
     }
   }
 </script>
